@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in Loop</title>
+    <script>
+         document.write(`<h2>First  example</h2>`);
+        let arr=[100,200,300,400];
+        for(let x in arr){
+            document.write(`index :${x},value:${arr[x]} <br>`);
+        }
+
+        document.write(`<h2>Second  example</h2>`);
+        let brr=[10,,30,,50];
+        document.write(`Traversing using Regular For<br>`);
+        for(let i=0;i<=brr.length-1;i++){
+            document.write(`index:${i},Value:${brr[i]}<br>`);
+        }
+        document.write(`Traversing using  For in Loop<br>`);
+        let count=0;
+        for(let y in brr){
+            document.write(`index :${y},value:${brr[y]} <br>`);
+            count++;     
+        }
+        document.write(`Loop iterated :${count}`);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

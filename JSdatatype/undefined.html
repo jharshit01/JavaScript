@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined Data type</title>
+    <script>
+        //1) when variable is unassigned
+        let a;
+        var b;
+        document.write(a);
+        document.write("<br>");
+        document.write(b);
+        document.write("<br>");
+        //2) access arrayindex which does not exist
+        let arr=[10,20,30];
+        document.write(arr[6]);
+        document.write("<br>");
+        //3) Accesssing property which does not exist
+        var car={name:"Audi",price:4000000,Average:115};
+        document.write(car.name);
+        document.write("<br>");
+        document.write(car.price);
+        document.write("<br>");
+        document.write(car.color);
+        document.write("<br>");
+        // 4) Calling funtion with less than require number of argument
+        function show(a,b){
+            document.write(a);
+            document.write("<br>");
+            document.write(b);
+            document.write("<br>");
+        }
+        show(10);
+        // 5) function not return anything
+        function display(){
+            let d=19;
+        }
+        document.write(display());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

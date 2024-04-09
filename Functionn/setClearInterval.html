@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Using Js</title>
+    <script>
+        let id;
+        function showDateTime(){
+            let today=new Date();
+            console.log(today);
+        }
+        function startTimer(){
+            id=setInterval(showDateTime,1000);
+        }
+        function stopTimer(){
+            clearInterval(id);
+            console.log("Clock Stopped");
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="start" onclick="startTimer()">
+    <input type="button" value="stop" onclick="stopTimer()">
+</body>
+</html>

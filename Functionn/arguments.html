@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greetings(){
+            document.write(`Function called with ${arguments.length} arguments<br>`);
+            for(let name of arguments){
+                document.write(`Good Evening${name}<br>`)  
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write("<strong>First Call</strong><br>");
+        greetings("Sachin","Amit","Ravi","Varun");
+        document.write("<strong>Second Call</strong><br>");
+        greetings("Sumit","Kumar");
+        document.write("<strong>Third Call</strong><br>");
+        greetings();
+
+    </script>
+</body>
+</html>

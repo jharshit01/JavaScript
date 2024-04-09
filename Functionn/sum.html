@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function average(){
+            let sum=0;
+            let avg;
+            for(let x of arguments){
+                sum=sum+x;
+            }
+            avg=sum/arguments.length;
+            document.write(`Sum is ${sum},its average is${avg.toFixed(2)}<br>`)
+        }
+    </script>
+</head>
+<body>
+    <script>
+         document.write(`<b>First CAll</b><br>`);
+         average(5,10,15,20);
+         document.write(`<b>Second CAll</b><br>`);
+         average(5,10);
+         document.write(`<b>Third CAll</b><br>`);
+         average(1,2,3,4,5);
+    </script>
+</body>
+</html>
